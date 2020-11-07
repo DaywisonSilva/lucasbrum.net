@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Início<span>subtitulo}</span></h1>
+    <h1>Início<span>{{ slogan }}</span></h1>
   </div>
 </template>
 
@@ -11,8 +11,14 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  props: {
+    slogan: String,
+    default: ''
   }
 }
+
+
 </script>
 <style scoped>
 </style>
