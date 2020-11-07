@@ -18,7 +18,7 @@ export default {
 
 <style>
 @import 'https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap';
-@import '@assets/css/main.css';
+@import './assets/css/main.css';
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
