@@ -1,19 +1,21 @@
 <template>
- <div class="blog">
-  <h1>{{blog}}</h1>
- </div>
+  <div class="home">
+    <h1>{{ titulo }}<span>{{ subtitulo }}</span></h1>
+  </div>
 </template>
-
 <script>
- export default{
-  name:'blog',
-  data (){
-   return{
-    title:'Blog'
-   }
+export default {
+  name: 'blog',
+  data () {
+    return {
+      titulo: 'Blog'
+    }
+  },
+  props: {
+    subtitulo: String,
+    default: ''
   }
- }
+}
 </script>
-
-<style scoped> 
+<style scoped>
 </style>

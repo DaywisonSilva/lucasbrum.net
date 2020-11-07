@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Início<span>{{ subtitulo }}</span></h1>
+    <h1>{{ titulo }}<span>{{ subtitulo }}</span></h1>
   </div>
 </template>
 <script>
