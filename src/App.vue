@@ -3,9 +3,8 @@
     <img src="./assets/logo.png">
     <router-view/>
 
-<li class="nav-item">
   <router-link class="nav-link" to="/blog">Blog</router-link>
-</li>
+
 <li class="nav-item">
   <router-link class="nav-link" to="/services">Services</router-link>
  </li>
@@ -29,5 +28,20 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
 }
 </style>
