@@ -13,7 +13,7 @@ export default {
     }
   },
   props: {
-    slogan: String,
+    subtitulo: String,
     default: ''
   }
 }
