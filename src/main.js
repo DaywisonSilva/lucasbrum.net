@@ -20,5 +20,6 @@ new Vue({
       return routes[this.currentRoute] || NotFound
     }
   },
-  render (h) { return h(this.ViewComponent) }
+  render (h) { return h(App) }
+//   render (h) { return h(this.ViewComponent) }
 })
