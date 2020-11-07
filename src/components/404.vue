@@ -1,15 +1,15 @@
 <template>
  <div class="blog">
-  <h1>{{blog}}</h1>
+  <h1>{{ title }}</h1>
  </div>
 </template>
 
 <script>
  export default{
-  name:'blog',
+  name:'notfound',
   data (){
    return{
-    title:'Blog'
+    title:'Página Não Encontrada'
    }
   }
  }
