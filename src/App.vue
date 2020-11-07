@@ -3,7 +3,13 @@
     <img src="./assets/logo.png">
     <router-view/>
 
-  <router-link class="nav-link" to="/blog">Blog</router-link>
+  
+
+  <ul>
+    <li><router-link class="nav-link" to="/blog">Blog</router-link></li>
+    <li><router-link class="nav-link" to="/blog">Blog</router-link></li>
+    <li><router-link class="nav-link" to="/blog">Blog</router-link></li>
+  </ul>
 
 <li class="nav-item">
   <router-link class="nav-link" to="/services">Services</router-link>
