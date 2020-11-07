@@ -3,13 +3,12 @@
     <h1>Início<span>{{ subtitulo }}</span></h1>
   </div>
 </template>
-
 <script>
 export default {
   name: 'inicio',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      titulo: 'Início'
     }
   },
   props: {
@@ -17,8 +16,6 @@ export default {
     default: ''
   }
 }
-
-
 </script>
 <style scoped>
 </style>
