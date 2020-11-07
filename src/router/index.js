@@ -7,6 +7,7 @@ import inicio from '@/components/inicio'
 import blog from '@/components/blog'
 import projetos from '@/components/projetos'
 import contato from '@/components/contato'
+import notfound from '@/components/404'
 
 Vue.use(Router)
 
@@ -32,6 +33,11 @@ export default new Router({
       path: '/contato',
       name: 'contato',
       component: contato
+    },
+    {
+      path: "*",
+      name: 'notfound',
+      component: notfound
     }
   ]
 })
