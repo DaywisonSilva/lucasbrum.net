@@ -5,8 +5,8 @@ import Router from 'vue-router'
 // Seções
 import inicio from '@/components/inicio'
 import blog from '@/components/blog'
-import services from '@/components/services'
-import contact from '@/components/contact'
+import projetos from '@/components/projetos'
+import contato from '@/components/contato'
 
 Vue.use(Router)
 
@@ -24,14 +24,14 @@ export default new Router({
       component: blog
     },
     {
-      path: '/services',
-      name: 'services',
-      component: services
+      path: '/projetos',
+      name: 'projetos',
+      component: projetos
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: contact
+      path: '/contato',
+      name: 'contato',
+      component: contato
     }
   ]
 })
