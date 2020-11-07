@@ -1,3 +1,6 @@
+import Vue from 'vue'
+import App from './App.vue'
+
 const NotFound = { template: '<p>Página não encontrada</p>' }
 const Home = { template: '<p>Página Inicial</p>' }
 const About = { template: '<p>Sobre</p>' }
