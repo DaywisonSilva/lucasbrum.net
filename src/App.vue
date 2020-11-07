@@ -3,7 +3,7 @@
     <img src="./assets/logo.png">
     <router-view/>
     <ul>
-      <li><router-link class="nav-link" to="/inicio">Início</router-link></li>
+      <li><router-link class="nav-link" to="/">Início</router-link></li>
       <li><router-link class="nav-link" to="/projetos">Projetos</router-link></li>
       <li><router-link class="nav-link" to="/contato">Contato</router-link></li>
     </ul>
