@@ -1,14 +1,37 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>aaaa
-    <ul>
-      <li><router-link class="nav-link" to="/">Início</router-link></li>
-      <li><router-link class="nav-link" to="/projetos">Projetos</router-link></li>
-      <li><router-link class="nav-link" to="/contato">Contato</router-link></li>
-    </ul>
+    <div class="container">
+      <aside>
+        <img class="logo" src="./assets/logo.png" alt="Lucas Saliés Brum">
+      </aside>  
+      <img src="./assets/logo.png">
+      <router-view/>
+      <ul>
+        <li><router-link class="nav-link" to="/">Início</router-link></li>
+        <li><router-link class="nav-link" to="/projetos">Projetos</router-link></li>
+        <li><router-link class="nav-link" to="/contato">Contato</router-link></li>
+      </ul>
+    </div>
   </div>
 </template>
+
+
+
+        <div class="container">
+            <aside>
+                <img class="logo" src="img/logo.png" alt="Lucas Saliés Brum">
+            </aside>   
+            
+            <main>
+                <h1>{{ titulo }}<span>{{ subtitulo }}</span></h1>
+                <ul>
+                    <li><a :href="inicioURL">Início</a></li>
+                    <li><a :href="projetosURL">Projetos</a></li>
+                    <li><a :href="contatoURL">Contato</a></li>
+                </ul>
+            </main>
+        </div>
+   
 
 <script>
 export default {
