@@ -1,19 +1,21 @@
 <template>
   <div class="home">
-    <h1>Projetos</h1>
+    <h1>{{ titulo }}<span>{{ subtitulo }}</span></h1>
   </div>
 </template>
-
 <script>
 export default {
-  name: 'contact',
+  name: 'projetos',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      titulo: 'Projetos'
     }
+  },
+  props: {
+    subtitulo: String,
+    default: ''
   }
 }
 </script>
-
 <style scoped>
 </style>
