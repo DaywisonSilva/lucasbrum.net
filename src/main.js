@@ -1,5 +1,6 @@
 import Vue from 'vue'
 // import App from './App.vue'
+import routes from './routes'
 
 const routes = {
   '/': 'Home',
