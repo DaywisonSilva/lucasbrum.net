@@ -2,10 +2,6 @@ import Vue from 'vue'
 // import App from './App.vue'
 import routes from './routes'
 
-const routes = {
-  '/': 'Home',
-  '/about': 'About'
-}
 
 Vue.config.productionTip = false
 
