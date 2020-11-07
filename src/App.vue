@@ -4,18 +4,14 @@
       <aside>
         <img class="logo" src="./assets/logo.png" alt="Lucas Saliés Brum">
       </aside>  
-
-            <main>
-                <router-view/>
-                
-      <ul>
-        <li><router-link class="nav-link" to="/">Início</router-link></li>
-        <li><router-link class="nav-link" to="/projetos">Projetos</router-link></li>
-        <li><router-link class="nav-link" to="/contato">Contato</router-link></li>
-      </ul>
-            </main>
-    
-
+      <main>
+        <router-view/>
+        <ul>
+          <li><router-link class="nav-link" to="/">Início</router-link></li>
+          <li><router-link class="nav-link" to="/projetos">Projetos</router-link></li>
+          <li><router-link class="nav-link" to="/contato">Contato</router-link></li>
+        </ul>
+      </main>
     </div>
   </div>
 </template>
@@ -28,9 +24,9 @@ export default {
 <style>
 @import 'https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap';
 @import './assets/css/main.css';
-
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
