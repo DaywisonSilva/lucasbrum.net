@@ -1,13 +1,9 @@
 import Vue from 'vue'
+import routes from './routes'
 import App from './App.vue'
 import Sobre from './Sobre.vue'
 import ErrorPage from './404.vue'
 import Home from './Home.vue'
-
-const routes = {
-  '/': Home,
-  '/sobre': Sobre
-}
 
 new Vue({
   el: '#app',
