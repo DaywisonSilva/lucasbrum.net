@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-
-const NotFound = { template: '<p>Página não encontrada</p>' }
-const Home = { template: '<p>Página Inicial</p>' }
-const About = { template: '<p>Sobre</p>' }
+import Sobre from './Sobre.vue'
+import ErrorPage from './404.vue'
+import Home from './Home.vue'
 
 const routes = {
   '/': Home,
@@ -17,7 +16,7 @@ new Vue({
   },
   computed: {
     ViewComponent () {
-      return routes[this.currentRoute] || App
+      return routes[this.currentRoute] || ErrorPage
     }
   },
   render (h) { return h(this.ViewComponent) }
