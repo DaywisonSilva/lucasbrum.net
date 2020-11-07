@@ -2,21 +2,11 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
-
-  
-
-  <ul>
-    <li><router-link class="nav-link" to="/blog">Blog</router-link></li>
-    <li><router-link class="nav-link" to="/blog">Blog</router-link></li>
-    <li><router-link class="nav-link" to="/blog">Blog</router-link></li>
-  </ul>
-
-<li class="nav-item">
-  <router-link class="nav-link" to="/services">Services</router-link>
- </li>
-<li class="nav-item">
-   <router-link class="nav-link" to="/contact">contact</router-link>
- </li>
+    <ul>
+      <li><router-link class="nav-link" to="/inicio">Início</router-link></li>
+      <li><router-link class="nav-link" to="/projetos">Projetos</router-link></li>
+      <li><router-link class="nav-link" to="/contato">Contato</router-link></li>
+    </ul>
   </div>
 </template>
 
