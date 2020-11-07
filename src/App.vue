@@ -5,7 +5,7 @@
         <img class="logo" src="./assets/logo.png" alt="Lucas Saliés Brum">
       </aside>  
       <main>
-        <router-view/>
+        <router-view :subtitulo="subtitulo" />
         <ul>
           <li><router-link class="nav-link" to="/">Início</router-link></li>
           <li><router-link class="nav-link" to="/projetos">Projetos</router-link></li>
@@ -17,7 +17,10 @@
 </template>
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data: function() { 
+    subtitulo: "PHP Developer" 
+  }
 }
 </script>
 
