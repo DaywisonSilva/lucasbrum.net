@@ -2,6 +2,7 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
+    <br />
     <ul>
       <li><router-link class="nav-link" to="/">Início</router-link></li>
       <li><router-link class="nav-link" to="/projetos">Projetos</router-link></li>
