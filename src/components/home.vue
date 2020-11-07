@@ -2,7 +2,9 @@
   <div class="home">
     <h1>Home</h1>
   </div>
-</template><script>
+</template>
+
+<script>
 export default {
   name: 'home',
   data () {
@@ -11,5 +13,7 @@ export default {
     }
   }
 }
-</script><!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+</script>
+
+<style scoped>
+</style>
