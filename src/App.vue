@@ -19,7 +19,9 @@
 export default {
   name: 'App',
   data: function() { 
-    return this.subtitulo = 'Desenvolvedor PHP & JavaScript'
+    return {
+      subtitulo: 'Desenvolvedor PHP & JavaScript'
+    }
   }
 }
 </script>
