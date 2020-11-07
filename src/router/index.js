@@ -3,7 +3,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // Seções
-import home from '@/components/home'
+import inicio from '@/components/inicio'
 import blog from '@/components/blog'
 import services from '@/components/services'
 import contact from '@/components/contact'
@@ -11,11 +11,12 @@ import contact from '@/components/contact'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: home
+      name: 'inicio',
+      component: inicio
     },
     {
       path: '/blog',
