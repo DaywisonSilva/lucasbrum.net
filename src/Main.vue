@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import VLink from 'Link.vue'
+  import Link from 'Link.vue'
   export default {
     components: {
       Link

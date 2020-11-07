@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './Main.vue'
 
 const NotFound = { template: '<p>Página não encontrada</p>' }
 const Home = { template: '<p>Página Inicial</p>' }
@@ -7,7 +7,7 @@ const About = { template: '<p>Sobre</p>' }
 
 const routes = {
   '/': Home,
-  '/sobre': About
+  '/sobre': Sobre
 }
 
 new Vue({
