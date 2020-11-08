@@ -18,6 +18,8 @@
 </template>
 
 <script>
+import { darkMode } from '@/js/darkmode'
+
 export default {
   name: 'App',
   data: function() { 

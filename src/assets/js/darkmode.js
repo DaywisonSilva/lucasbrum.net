@@ -9,7 +9,7 @@ if (currentTheme) {
     }
 }
 
-function switchTheme(e) {
+function darkMode(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
