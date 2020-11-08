@@ -85,8 +85,9 @@ aside {
   .container {
     display: block;
     width: 100%;
+    padding: 20px;
   }
-  
+
   aside {
     width: 100%;
     text-align: center;
@@ -94,8 +95,5 @@ aside {
 
   main {
     width: 100%;
-  }
-
-
- 
+  } 
 }
