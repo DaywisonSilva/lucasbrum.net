@@ -19,6 +19,21 @@ h1 {
   line-height: 0.8;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+}
+
+a {
+  color: #42b983;
+}
+
 h1 span {
   display: block;
   font-size: .5em;
@@ -36,13 +51,31 @@ ul {
   height: 100%;
 }
 
+main {
+  width: 75%;
+  height: 100%;
+  /* border: 1px dotted red; */
+}
+
+main {
+  width: 75%;
+  height: 100%;
+  border: 1px dotted red;
+}
+
+aside {
+  width: 25%;
+}
+
 .logo {
-  width: 180px;
+  /* width: 180px; */
+  width: 100%;
 }
 
 .container {
   display: inline-flex;
   align-items: center;
+  max-width: 470px;
 }
 
 @media only all and (orientation: portrait) {
