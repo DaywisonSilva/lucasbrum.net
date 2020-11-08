@@ -25,6 +25,7 @@ export default {
   data: function() { 
     return {
       subtitulo: 'Desenvolvedor PHP & JavaScript',
+      dataTheme: 'dark',
       dark: false
     }
   },
