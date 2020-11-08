@@ -71,7 +71,7 @@ aside {
 }
 
 .logo {
-  /* width: 180px; */
+  max-width: 180px;
   width: 100%;
 }
 
@@ -85,6 +85,10 @@ aside {
   aside {
     width: 100%;
     text-align: center;
+  }
+
+  main {
+    width: 100%;
   }
 
   #app {
