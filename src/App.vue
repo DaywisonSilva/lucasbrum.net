@@ -5,7 +5,7 @@
         <img class="logo" src="./assets/logo.png" alt="Lucas Saliés Brum">
       </aside>  
       <main>
-        <div class="lights"><i class="fas fa-sun" @click="darkMode"></i></div>
+        <div class="lights"><i class="fas fa-sun" @click="switchTheme"></i></div>
         <router-view :subtitulo="subtitulo" />
         <ul>
           <li><router-link class="nav-link" to="/">Início</router-link></li>
@@ -25,6 +25,18 @@ export default {
   data: function() { 
     return {
       subtitulo: 'Desenvolvedor PHP & JavaScript'
+    }
+  },
+  methods: {
+    switchTheme: function (event) {
+      // `this` dentro de métodos aponta para a instância Vue
+      //alert('Olá ' + this.name + '!')
+      // `event` é o evento DOM nativo
+
+      // darkMode
+      if (event) {
+        alert(event.target.tagName)
+      }
     }
   }
 }
