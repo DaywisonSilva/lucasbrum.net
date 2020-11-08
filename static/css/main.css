@@ -60,6 +60,12 @@ main {
   /* border: 1px dotted red; */
 }
 
+.lights {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 aside {
   width: 25%;
 }
