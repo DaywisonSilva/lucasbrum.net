@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { darkMode } from '@/js/darkmode'
+import { darkMode } from '@/assets/js/darkmode'
 
 export default {
   name: 'App',
