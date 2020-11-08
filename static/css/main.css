@@ -82,6 +82,11 @@ aside {
 }
 
 @media only all and (orientation: portrait) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+  
   aside {
     width: 100%;
     text-align: center;
@@ -91,14 +96,6 @@ aside {
     width: 100%;
   }
 
-  #app {
-    /* text-align: center; */
-  }
-
-  .container {
-    display: block;
-    /* text-align: center; */
-  }
 
  
 }
