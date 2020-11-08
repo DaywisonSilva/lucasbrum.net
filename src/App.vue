@@ -34,6 +34,8 @@ export default {
       //alert('Olá ' + this.name + '!')
       // `event` é o evento DOM nativo
 
+      dark = dark ? false : true
+
       // darkMode
       if (event) {
         alert(event.target.tagName)
