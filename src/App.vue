@@ -5,7 +5,7 @@
         <img class="logo" src="./assets/logo.png" alt="Lucas Saliés Brum">
       </aside>  
       <main>
-        <div class="lights"><i class="fas fa-sun" @click="switchTheme"></i></div>
+        <div class="lights"><i :class="[dark ? 'fas fa-moon' : 'fas fa-sun']" @click="switchTheme"></i></div>
         <router-view :subtitulo="subtitulo" />
         <ul>
           <li><router-link class="nav-link" to="/">Início</router-link></li>
@@ -24,7 +24,8 @@ export default {
   name: 'App',
   data: function() { 
     return {
-      subtitulo: 'Desenvolvedor PHP & JavaScript'
+      subtitulo: 'Desenvolvedor PHP & JavaScript',
+      dark: false
     }
   },
   methods: {
