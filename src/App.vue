@@ -5,6 +5,7 @@
         <img class="logo" src="./assets/logo.png" alt="Lucas Saliés Brum">
       </aside>  
       <main>
+        <div class="lights"><i class="fas fa-sun"></i></div>
         <router-view :subtitulo="subtitulo" />
         <ul>
           <li><router-link class="nav-link" to="/">Início</router-link></li>
