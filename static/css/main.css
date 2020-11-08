@@ -86,8 +86,14 @@ aside {
     text-align: center;
   }
 
+  #app {
+    text-align: center;
+  }
+  
   .container {
     display: block;
+    text-align: center;
   }
+
  
 }
