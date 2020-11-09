@@ -40,13 +40,14 @@ export default {
   },
   methods: {
     darkSwitch: function () {
-      let htmlElement = document.documentElement;
       if (this.darkMode) {
-        localStorage.setItem("theme", "dark");
-        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem("theme", "dark")
+        document.documentElement.setAttribute('data-theme', 'dark')
+        this.darkMode = false
       } else {
-        localStorage.setItem("theme", "light");
-        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem("theme", "light")
+        document.documentElement.setAttribute('data-theme', 'light')
+        this.darkMode = true
       }
     }
   },
