@@ -5,7 +5,7 @@
     </h1>
     <p>
       <ul>
-        <li v-for="(item, index) in repos">
+        <li v-for="(item, index) in repos" :key="item.id">
           {{ index }} - {{ item.name }}
         </li>
       </ul>
