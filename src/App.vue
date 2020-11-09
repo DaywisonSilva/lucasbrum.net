@@ -11,7 +11,7 @@
             @click="darkSwitch()"
           ></i>
         </div>
-        <router-view :subtitulo="subtitulo" />
+        <router-view :titulo ="titulo" :subtitulo="subtitulo" />
         <ul>
           <li><router-link class="nav-link" to="/">Início</router-link></li>
           <li>
