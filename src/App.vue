@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style>
-@import 'assets/css/darkmode.css';
+@import '../static/css/darkmode.css';
 
 #app {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
