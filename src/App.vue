@@ -33,7 +33,7 @@ export default {
     return {
       titulo: 'Lucas Saliés Brum',
       subtitulo: 'Desenvolvedor PHP & JavaScript',
-      darkMode: false
+      darkMode: null
     };
   },
   methods: {
@@ -55,7 +55,7 @@ export default {
   },
   watch: {
     darkMode: function () {
-      return this.darkMode = localStorage.theme === 'dark' ? true : false;
+      this.darkMode = localStorage.theme === 'dark' ? true : false;
     }
   }
 }
