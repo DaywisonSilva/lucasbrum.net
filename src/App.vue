@@ -50,11 +50,13 @@ export default {
           document.documentElement.setAttribute('data-theme', 'light');
         }
       }
+
+      return this.darkMode
   },
   mounted() {
       document.title = "Lucas Saliés Brum - WebDev"
   }
-};
+}
 </script>
 
 <style>
