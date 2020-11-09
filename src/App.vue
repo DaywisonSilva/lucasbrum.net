@@ -64,7 +64,7 @@ export default {
       }
     },
     watch: {
-      darkSwaitch: function () {
+      darkSwitch: function () {
 
         let htmlElement = document.documentElement;
         if (this.darkMode) {
