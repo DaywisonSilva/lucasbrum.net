@@ -52,6 +52,11 @@ export default {
   mounted() {
     document.title = "Lucas Saliés Brum - WebDev"
     this.darkSwitch();
+  },
+  watch: {
+    darkMode: function () {
+      return this.darkMode = localStorage.theme === 'dark' ? true : false;
+    }
   }
 }
 </script>
