@@ -3,7 +3,13 @@
     <h1>
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
-    <p>Em breve...</p>
+    <p>
+      <ul>
+        <li v-for="(item, index) in repos">
+          {{ index }} - {{ item.name }}
+        </li>
+      </ul>
+    </p>
   </div>
 </template>
 <script>
@@ -12,7 +18,7 @@ export default {
   data() {
     return {
       subtitulo: "Projetos",
-      repos: {}
+      repos: []
     };
   },
   props: {
