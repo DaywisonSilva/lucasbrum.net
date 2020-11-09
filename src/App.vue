@@ -7,7 +7,7 @@
       <main>
         <div class="lights">
           <i
-            :class="[dark ? 'fas fa-moon' : 'fas fa-sun']"
+            :class="[darkMode ? 'fas fa-moon' : 'fas fa-sun']"
             @click="switchTheme"
           ></i>
         </div>
@@ -35,7 +35,7 @@ export default {
     return {
       subtitulo: "Desenvolvedor PHP & JavaScript",
       dataTheme: "dark",
-      dark: false,
+      darkMode: false,
     };
   },
   methods: {
@@ -44,7 +44,7 @@ export default {
       //alert('Olá ' + this.name + '!')
       // `event` é o evento DOM nativo
 
-      this.dark = this.dark ? false : true;
+      this.darkMode = this.darkMode ? false : true;
 
       // darkMode
       //if (event) {
@@ -86,7 +86,7 @@ export default {
 </script>
 
 <style>
-@import "../static/css/darkmode.css";
+@import "src/css/darkmode.css";
 
 #app {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
