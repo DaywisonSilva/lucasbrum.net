@@ -25,7 +25,7 @@ export default {
     titulo: String,
   },
   mounted() {
-    let url = "https://api.github.com/users/sistematico/repos";
+    let url = "https://api.github.com/users/sistematico/repos?per_page=100";
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
