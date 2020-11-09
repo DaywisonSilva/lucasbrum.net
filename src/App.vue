@@ -41,7 +41,6 @@ export default {
   methods: {
     darkSwitch: function () {
       if (this.darkMode) {
-      //if (localStorage.theme && localStorage.theme === 'dark') {
         localStorage.theme = 'dark';
         document.documentElement.setAttribute('data-theme', 'dark');
         this.darkMode = false;
@@ -54,10 +53,8 @@ export default {
   },
   mounted() {
       document.title = "Lucas Saliés Brum - WebDev"
-
-      if (localStorage.theme && localStorage.theme === 'dark') {
+      if (this.darkMode) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        this.darkMode = true;
       }  
   }
 }
