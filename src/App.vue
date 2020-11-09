@@ -8,7 +8,7 @@
         <div class="lights">
           <i
             :class="[darkMode ? 'fas fa-moon' : 'fas fa-sun']"
-            @click="darkSwitch"
+            @click="darkSwitch()"
           ></i>
         </div>
         <router-view :subtitulo="subtitulo" />
@@ -40,18 +40,15 @@ export default {
   },
   methods: {
     darkSwitch: function () {
-
-        let htmlElement = document.documentElement;
-        if (this.darkMode) {
-          localStorage.setItem("theme", "dark");
-          document.documentElement.setAttribute('data-theme', 'dark');
-        } else {
-          localStorage.setItem("theme", "light");
-          document.documentElement.setAttribute('data-theme', 'light');
-        }
+      let htmlElement = document.documentElement;
+      if (this.darkMode) {
+        localStorage.setItem("theme", "dark");
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        localStorage.setItem("theme", "light");
+        document.documentElement.setAttribute('data-theme', 'light');
       }
-
-      return this.darkMode
+    }
   },
   mounted() {
       document.title = "Lucas Saliés Brum - WebDev"
