@@ -9,7 +9,7 @@ export default {
   name: 'inicio',
   data () {
     return {
-      subtitulo: 'Lucas Saliés Brum'
+      subtitulo: 'Desenvolvedor PHP & JavaScript'
     }
   },
   props: {
