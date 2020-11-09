@@ -12,6 +12,7 @@ export default {
   data() {
     return {
       subtitulo: "Projetos",
+      repos: {}
     };
   },
   props: {
@@ -22,9 +23,11 @@ export default {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        for (const item of data) {
-          console.log(item.name);
-        }
+        // for (const item of data) {
+        //   console.log(item.name);
+        // }
+
+        this.repos = data;
       })
       .catch(console.error);
   },
