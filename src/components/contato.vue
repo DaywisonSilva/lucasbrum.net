@@ -4,19 +4,21 @@
     <p>Em breve...</p>
   </div>
 </template>
+
 <script>
 export default {
   name: 'contato',
   data () {
     return {
-      titulo: 'Contato'
+      subtitulo: 'Contato'
     }
   },
   props: {
-    subtitulo: String,
+    titulo: String,
     default: ''
   }
 }
 </script>
+
 <style scoped>
 </style>

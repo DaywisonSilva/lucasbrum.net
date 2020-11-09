@@ -8,7 +8,7 @@
         <div class="lights">
           <i
             :class="[darkMode ? 'fas fa-moon' : 'fas fa-sun']"
-            @click="switchTheme"
+            @click="darkSwitch"
           ></i>
         </div>
         <router-view :subtitulo="subtitulo" />
@@ -52,7 +52,6 @@ export default {
       //}
     },
     mounted() {
-      // set page title
       document.title = "Lucas Saliés Brum - WebDev";
 
       let theme = localStorage.getItem("theme");
@@ -65,7 +64,7 @@ export default {
       }
     },
     watch: {
-      darkMode: function () {
+      darkSwaitch: function () {
 
         let htmlElement = document.documentElement;
         if (this.darkMode) {
