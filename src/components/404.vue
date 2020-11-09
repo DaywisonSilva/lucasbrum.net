@@ -8,12 +8,11 @@ export default {
   name: 'notfound',
   data () {
     return {
-      titulo: 'Erro 404'
+      subtitulo: 'Erro 404'
     }
   },
   props: {
-    subtitulo: String,
-    default: ''
+    titulo: String
   }
 }
 </script>

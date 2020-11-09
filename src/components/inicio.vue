@@ -9,12 +9,11 @@ export default {
   name: 'inicio',
   data () {
     return {
-      titulo: 'Lucas Saliés Brum'
+      subtitulo: 'Lucas Saliés Brum'
     }
   },
   props: {
-    subtitulo: String,
-    default: ''
+    titulo: String
   }
 }
 </script>
