@@ -39,32 +39,7 @@ export default {
     };
   },
   methods: {
-    switchTheme: function (event) {
-      // `this` dentro de métodos aponta para a instância Vue
-      //alert('Olá ' + this.name + '!')
-      // `event` é o evento DOM nativo
-
-      this.darkMode = this.darkMode ? false : true;
-
-      // darkMode
-      //if (event) {
-      //  alert(event.target.tagName)
-      //}
-    },
-    mounted() {
-      document.title = "Lucas Saliés Brum - WebDev";
-
-      let theme = localStorage.getItem("theme");
-      if (theme === "dark") {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        this.darkMode = true;
-      } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        this.darkMode = false;
-      }
-    },
-    watch: {
-      darkSwitch: function () {
+    darkSwitch: function () {
 
         let htmlElement = document.documentElement;
         if (this.darkMode) {
@@ -74,9 +49,11 @@ export default {
           localStorage.setItem("theme", "light");
           document.documentElement.setAttribute('data-theme', 'light');
         }
-      },
-    },
+      }
   },
+  mounted() {
+      document.title = "Lucas Saliés Brum - WebDev"
+  }
 };
 </script>
 
