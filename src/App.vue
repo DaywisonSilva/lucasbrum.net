@@ -41,19 +41,17 @@ export default {
       if (this.darkMode) {
         localStorage.theme = 'dark';
         document.documentElement.setAttribute('data-theme', 'dark');
-        this.darkMode = false;
+        this.darkMode = true;
       } else {
         localStorage.theme = 'light';
         document.documentElement.setAttribute('data-theme', 'light');
-        this.darkMode = true;
+        this.darkMode = false;
       }
     }
   },
-  computed() {
-      document.title = "Lucas Saliés Brum - WebDev"
-      if (localStorage.theme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      }  
+  mounted() {
+    document.title = "Lucas Saliés Brum - WebDev"
+    this.darkSwitch();
   }
 }
 </script>
