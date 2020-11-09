@@ -27,15 +27,15 @@
 </template>
 
 <script>
-import { darkMode } from "@/assets/js/darkmode";
+//import { darkMode } from "@/assets/js/darkmode";
 
 export default {
   name: "App",
   data: function () {
     return {
-      subtitulo: "Desenvolvedor PHP & JavaScript",
-      dataTheme: "dark",
-      darkMode: false,
+      titulo: 'Lucas Saliés Brum',
+      subtitulo: 'Desenvolvedor PHP & JavaScript',
+      darkMode: false
     };
   },
   methods: {
@@ -54,30 +54,26 @@ export default {
     mounted() {
       // set page title
       document.title = "Lucas Saliés Brum - WebDev";
-      // set 'app-background' class to body tag
-      let bodyElement = document.body;
-      bodyElement.classList.add("app-background");
-      // check for active theme
-      let htmlElement = document.documentElement;
+
       let theme = localStorage.getItem("theme");
       if (theme === "dark") {
-        htmlElement.setAttribute("theme", "dark");
+        document.documentElement.setAttribute('data-theme', 'dark');
         this.darkMode = true;
       } else {
-        htmlElement.setAttribute("theme", "light");
+        document.documentElement.setAttribute('data-theme', 'light');
         this.darkMode = false;
       }
     },
     watch: {
       darkMode: function () {
-        // add/remove class to/from html tag
+
         let htmlElement = document.documentElement;
         if (this.darkMode) {
           localStorage.setItem("theme", "dark");
-          htmlElement.setAttribute("theme", "dark");
+          document.documentElement.setAttribute('data-theme', 'dark');
         } else {
           localStorage.setItem("theme", "light");
-          htmlElement.setAttribute("theme", "light");
+          document.documentElement.setAttribute('data-theme', 'light');
         }
       },
     },
