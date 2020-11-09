@@ -41,18 +41,22 @@ export default {
   methods: {
     darkSwitch: function () {
       if (this.darkMode) {
-        localStorage.setItem("theme", "dark")
-        document.documentElement.setAttribute('data-theme', 'dark')
-        this.darkMode = false
+        localStorage.setItem("theme", "dark");
+        document.documentElement.setAttribute('data-theme', 'dark');
+        this.darkMode = false;
       } else {
-        localStorage.setItem("theme", "light")
-        document.documentElement.setAttribute('data-theme', 'light')
-        this.darkMode = true
+        localStorage.setItem("theme", "light");
+        document.documentElement.setAttribute('data-theme', 'light');
+        this.darkMode = true;
       }
     }
   },
   mounted() {
       document.title = "Lucas Saliés Brum - WebDev"
+
+      if (localStorage.theme) {
+        this.darkMode = true;
+      }  
   }
 }
 </script>
