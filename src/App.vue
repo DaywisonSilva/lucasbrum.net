@@ -33,7 +33,7 @@ export default {
     return {
       titulo: 'Lucas Saliés Brum',
       subtitulo: 'Desenvolvedor PHP & JavaScript',
-      darkMode: localStorage.theme === 'dark' ? true : false
+      darkMode: false
     };
   },
   methods: {
@@ -49,9 +49,9 @@ export default {
       }
     }
   },
-  mounted() {
+  computed() {
       document.title = "Lucas Saliés Brum - WebDev"
-      if (this.darkMode) {
+      if (localStorage.theme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
       }  
   }
