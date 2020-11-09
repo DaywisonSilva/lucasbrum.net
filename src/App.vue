@@ -51,10 +51,10 @@ export default {
   },
   mounted() {
     document.title = "Lucas Saliés Brum - WebDev"
-    this.darkSwitch();
+    //this.darkSwitch();
   },
   watch: {
-    darkMode: function () {
+    darkSwitch: function () {
       this.darkMode = localStorage.theme === 'dark' ? true : false;
     }
   }
