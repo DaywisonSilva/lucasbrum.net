@@ -35,17 +35,19 @@ export default {
     return {
       titulo: 'Lucas Saliés Brum',
       subtitulo: 'Desenvolvedor PHP & JavaScript',
-      darkMode: false
+      darkMode: (localStorage.theme == 'dark' ? true : false);
     };
   },
   methods: {
     darkSwitch: function () {
       if (this.darkMode) {
-        localStorage.setItem("theme", "dark");
+        //localStorage.setItem("theme", "dark");
+        localStorage.theme = 'dark';
         document.documentElement.setAttribute('data-theme', 'dark');
         this.darkMode = false;
       } else {
-        localStorage.setItem("theme", "light");
+        //localStorage.setItem("theme", "light");
+        localStorage.theme = 'light';
         document.documentElement.setAttribute('data-theme', 'light');
         this.darkMode = true;
       }
@@ -54,7 +56,7 @@ export default {
   mounted() {
       document.title = "Lucas Saliés Brum - WebDev"
 
-      if (localStorage.theme) {
+      if (localStorage.theme && localStorage.theme === 'dark') {
         this.darkMode = true;
       }  
   }
