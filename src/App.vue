@@ -11,7 +11,7 @@
             @click="darkSwitch()"
           ></i>
         </div>
-        <router-view :titulo ="titulo" :subtitulo="subtitulo" />
+        <router-view :subtitulo="subtitulo" />
         <ul>
           <li><router-link class="nav-link" to="/">Início</router-link></li>
           <li>
@@ -27,8 +27,6 @@
 </template>
 
 <script>
-//import { darkMode } from "@/assets/js/darkmode";
-
 export default {
   name: "App",
   data: function () {
