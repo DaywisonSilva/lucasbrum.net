@@ -22,9 +22,8 @@ export default {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        for (const nome of data.name) {
-          console.log(name);
-
+        for (const item of data) {
+          console.log(item.name);
         }
       })
       .catch(console.error);
