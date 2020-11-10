@@ -43,7 +43,7 @@ export default {
     async loadRepos (url) {
       try {
         this.loaded = false
-        const repos = await fetch(url)
+        const repos = await fetch(url).then(res => res.json())
         this.repos = repos
       } catch (err) {
         console.error(err)
