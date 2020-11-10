@@ -1,12 +1,10 @@
-<template v-for="item in repos">
+<template>
   <div class="home">
     <h1>
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
-    <p>
-      
-        {{ item.name }}
-      
+    <p>      
+        
     </p>
   </div>
 </template>
