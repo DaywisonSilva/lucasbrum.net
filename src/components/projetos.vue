@@ -3,7 +3,7 @@
     <h1>
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
-    <p v-if="loaded === false">Loading...</p>
+    <p v-if="loaded === false"><div class="loader"></div></p>
     <p v-else>
       <span v-for="r in repos" :key="r.id">
         <a :href="r.html_url">
