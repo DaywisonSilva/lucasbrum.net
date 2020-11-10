@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       subtitulo: "Projetos",
-      repos: []
+      repos: {}
     };
   },
   props: {
@@ -36,7 +36,9 @@ export default {
 
         this.repos = data;
       })
-      .catch(console.error);
+      .catch((error) => {
+        console.error(error);
+      });
   },
 };
 </script>
