@@ -3,12 +3,17 @@
     <h1>
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
-    <p>      
-        <span v-for="r in repos" :key="r.id">
-          <a :href="r.html_url">
-            {{ r.name }}
-          </a>
-        </span>
+    <p>
+        <div v-if="loaded">
+          Loading...
+        </div>
+        <div v-else>
+          <span v-for="r in repos" :key="r.id">
+            <a :href="r.html_url">
+              {{ r.name }}
+            </a>
+          </span>
+        </div>
     </p>
   </div>
 </template>
@@ -18,7 +23,8 @@ export default {
   data() {
     return {
       subtitulo: "Projetos",
-      repos: {}
+      repos: {},
+      loaded: false
     };
   },
   props: {
