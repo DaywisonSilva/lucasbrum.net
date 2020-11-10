@@ -4,7 +4,7 @@
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
     <p>
-        <div v-if="loaded">
+        <div v-if="loaded === true">
           Loading...
         </div>
         <div v-else>
