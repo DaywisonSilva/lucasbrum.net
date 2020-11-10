@@ -30,14 +30,9 @@ export default {
       .then((response) => response.json())
       .then((data) => {
         let newData = {};
-        console.log(typeof newData);
-
-        for (const item of data) {
-          console.log(item.owner);
-
-
-          data.push(item);
-        }
+        // for (const item of data) {
+        //   data.push(item);
+        // }
 
         this.repos = data;
       })
