@@ -33,7 +33,10 @@ export default {
         console.log(typeof newData);
 
         for (const item of data) {
-          console.log(item);
+          console.log(item.owner);
+
+
+          data.push(item);
         }
 
         this.repos = data;
