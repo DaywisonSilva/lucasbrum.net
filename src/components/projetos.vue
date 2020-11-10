@@ -3,9 +3,7 @@
     <h1>
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
-    <p v-if="loaded === false">
-      Loading...
-    </p>
+    <p v-if="loaded === false">Loading...</p>
     <p v-else>
       <span v-for="r in repos" :key="r.id">
         <a :href="r.html_url">
@@ -22,24 +20,42 @@ export default {
     return {
       subtitulo: "Projetos",
       repos: {},
-      loaded: false
+      loaded: false,
     };
   },
   props: {
     titulo: String,
   },
-  mounted() {
-    repos: function () {
+  methods: {
+    fetchRepos: function () {
       let url = "https://api.github.com/users/sistematico/repos?per_page=100";
       fetch(url)
-      .then((response) => { 
-        this.loaded = true;
-        return response.json();
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-    }
+        .then((response) => {
+          this.loaded = true;
+          return response.json();
+        })
+        .catch((error) => {
+          this.loaded = true;
+          console.error(error);
+        });
+    },
+  },
+  mounted() {
+    this.repos = this.fetchRepos();
+    // let url = "https://api.github.com/users/sistematico/repos?per_page=100";
+    // fetch(url)
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     let newData = {};
+    //     // for (const item of data) {
+    //     //   data.push(item);
+    //     // }
+
+    //     this.repos = data;
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //   });
   },
 };
 </script>
