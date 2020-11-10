@@ -3,7 +3,7 @@
     <h1>
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
-    <p v-if="loaded === true">
+    <p v-if="loaded === false">
       Loading...
     </p>
     <p v-else>
@@ -29,20 +29,17 @@ export default {
     titulo: String,
   },
   mounted() {
-    let url = "https://api.github.com/users/sistematico/repos?per_page=100";
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        let newData = {};
-        // for (const item of data) {
-        //   data.push(item);
-        // }
-
-        this.repos = data;
+    repos: function () {
+      let url = "https://api.github.com/users/sistematico/repos?per_page=100";
+      fetch(url)
+      .then((response) => { 
+        this.loaded = true;
+        return response.json();
       })
       .catch((error) => {
         console.error(error);
       });
+    }
   },
 };
 </script>
