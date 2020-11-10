@@ -5,7 +5,9 @@
     </h1>
     <p>      
         <span v-for="r in repos" :key="r.id">
-          {{ r.name }}
+          <a :href="{{ r.name }}">
+            {{ r.name }}
+          </a>
         </span>
     </p>
   </div>
