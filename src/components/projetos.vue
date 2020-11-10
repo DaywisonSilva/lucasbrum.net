@@ -29,8 +29,8 @@ export default {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        let newData;
-        console.log(typeof data);
+        let newData = {};
+        console.log(typeof newData);
 
         for (const item of data) {
           console.log(item);
