@@ -45,7 +45,7 @@ export default {
         this.loaded = false
 
         const repos = await fetch(url)
-        this.repos = repos
+        this.repos = repos.json()
       } catch (err) {
         console.error(err)
       } finally {
