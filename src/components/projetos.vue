@@ -4,7 +4,7 @@
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
     <p>      
-        
+        <span v-for="r in repos" :key="r.id">{{ r.name }} </span>
     </p>
   </div>
 </template>
