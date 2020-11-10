@@ -19,20 +19,18 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+  max-width: 470px;
 }
 
 .container {
   display: inline-flex;
   align-items: center;
   max-width: 470px;
-  height: 100%;
 }
 
 main {
   position: relative;
   width: 75%;
-  /* height: 100%; */
-  overflow-y: auto;
 }
 
 a {
