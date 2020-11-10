@@ -1,12 +1,12 @@
-<template>
+<template v-for="item in repos">
   <div class="home">
     <h1>
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
     <p>
-      <span v-for="(item, index) in repos" :key="item.id">
-        { index }} - {{ item.name }}
-      </span>
+      
+        {{ item.name }}
+      
     </p>
   </div>
 </template>
