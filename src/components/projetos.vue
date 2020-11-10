@@ -3,8 +3,10 @@
     <h1>
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
-    <p v-for="(item, index) in repos" :key="item.id">
-          {{ index }} - {{ item.name }}
+    <p>
+      <span v-for="(item, index) in repos" :key="item.id">
+        { index }} - {{ item.name }}
+      </span>
     </p>
   </div>
 </template>
