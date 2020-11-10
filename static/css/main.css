@@ -21,11 +21,18 @@ body {
   height: 100%;
 }
 
+.container {
+  display: inline-flex;
+  align-items: center;
+  max-width: 470px;
+  height: 100%;
+}
+
 main {
   position: relative;
   width: 75%;
-  height: 100%;
-  overflow-y: scroll;
+  /* height: 100%; */
+  overflow-y: auto;
 }
 
 a {
@@ -79,12 +86,6 @@ aside {
 .logo {
   max-width: 180px;
   width: 100%;
-}
-
-.container {
-  display: inline-flex;
-  align-items: center;
-  max-width: 470px;
 }
 
 @media only all and (orientation: portrait) {
