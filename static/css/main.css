@@ -25,6 +25,7 @@ main {
   position: relative;
   width: 75%;
   height: 100%;
+  margin: 100px 0;
 }
 
 a {
