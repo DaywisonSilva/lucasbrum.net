@@ -47,6 +47,10 @@ ul {
   list-style-type: none;
 }
 
+main div.home p span a {
+  font-size: .5em;
+}
+
 #app {
   display: flex;
   align-items: center;
