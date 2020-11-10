@@ -39,23 +39,23 @@ export default {
           console.error(error);
         });
     },
-  },
-  mounted() {
-    this.repos = this.fetchRepos();
-    // let url = "https://api.github.com/users/sistematico/repos?per_page=100";
-    // fetch(url)
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     let newData = {};
-    //     // for (const item of data) {
-    //     //   data.push(item);
-    //     // }
 
-    //     this.repos = data;
-    //   })
-    //   .catch((error) => {
-    //     console.error(error);
-    //   });
+    async loadRepos (url) {
+      try {
+        this.loaded = false
+
+        const repos = await fetch(url)
+        this.repos = repos
+      } catch (err) {
+        console.error(err)
+      } finally {
+        this.loaded = true
+      }
+    }
+  },
+  async mounted() {
+    await this.loadRepos('https://api.github.com/users/sistematico/repos?per_page=100')
+    //this.repos = this.fetchRepos();
   },
 };
 </script>
