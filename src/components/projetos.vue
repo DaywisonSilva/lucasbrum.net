@@ -43,9 +43,8 @@ export default {
     async loadRepos (url) {
       try {
         this.loaded = false
-
         const repos = await fetch(url)
-        this.repos = repos.json()
+        this.repos = repos
       } catch (err) {
         console.error(err)
       } finally {
@@ -55,7 +54,6 @@ export default {
   },
   async mounted() {
     await this.loadRepos('https://api.github.com/users/sistematico/repos?per_page=100')
-    //this.repos = this.fetchRepos();
   },
 };
 </script>
