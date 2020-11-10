@@ -1,4 +1,5 @@
-@import 'https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap';
+/* @import 'https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap'; */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Open+Sans|Sansita+One");
 
 * {
   margin: 0;
@@ -13,8 +14,25 @@ body {
   font-family: 'Open Sans', sans-serif; 
 }
 
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+main {
+  position: relative;
+  width: 75%;
+  height: 100%;
+}
+
+a {
+  color: #42b983;
+}
+
 h1, h2, h3, h4, h5, h6 { 
-  font-family: 'Indie Flower', cursive; 
+  font-family: 'Lato', cursive; 
 }
 
 h1 {
@@ -32,10 +50,6 @@ li {
   margin: 10px;
 }
 
-a {
-  color: #42b983;
-}
-
 h1 span {
   display: block;
   font-size: .5em;
@@ -46,23 +60,14 @@ ul {
   list-style-type: none;
 }
 
-#app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+main div.home p span a {
+  font-size: .5em;
 }
 
-main {
-  width: 75%;
-  height: 100%;
-  /* border: 1px dotted red; */
-}
-
-main {
-  width: 75%;
-  height: 100%;
-  border: 1px dotted red;
+.lights {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 aside {
@@ -70,7 +75,7 @@ aside {
 }
 
 .logo {
-  /* width: 180px; */
+  max-width: 180px;
   width: 100%;
 }
 
@@ -81,12 +86,18 @@ aside {
 }
 
 @media only all and (orientation: portrait) {
+  .container {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+
   aside {
+    width: 100%;
     text-align: center;
   }
 
-  .container {
-    display: block;
-  }
- 
+  main {
+    width: 100%;
+  } 
 }
