@@ -3,14 +3,16 @@
     <h1>
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
-    <p v-if="loaded === false"><div class="loader"></div></p>
-    <p v-else>
+    <div v-if="loaded === false">
+
+    </div>
+    <div v-else>
       <span v-for="r in repos" :key="r.id">
         <a :href="r.html_url">
           {{ r.name }}
         </a>
       </span>
-    </p>
+    </div>
   </div>
 </template>
 <script>
