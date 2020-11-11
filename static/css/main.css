@@ -18,7 +18,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
 }
 
 .container {
@@ -70,6 +72,12 @@ main div.home p span a {
   font-size: .5em;
 }
 
+.projects div:nth-child(2) {
+  /* height: 70vh; */
+  max-height: 400px;
+  overflow: auto;
+}
+
 .lights {
   position: absolute;
   top: 0;
@@ -100,4 +108,10 @@ aside {
   main {
     width: 100%;
   } 
+}
+
+@media screen and (max-height: 506px) {
+  #app {
+    align-items: flex-start;
+  }
 }
