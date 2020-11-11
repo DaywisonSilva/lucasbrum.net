@@ -27,18 +27,18 @@ export default {
     titulo: String,
   },
   methods: {
-    fetchRepos: function () {
-      let url = "https://api.github.com/users/sistematico/repos?per_page=100";
-      fetch(url)
-        .then((response) => {
-          this.loaded = true;
-          return response.json();
-        })
-        .catch((error) => {
-          this.loaded = true;
-          console.error(error);
-        });
-    },
+    // fetchRepos: function () {
+    //   let url = "https://api.github.com/users/sistematico/repos?per_page=100";
+    //   fetch(url)
+    //     .then((response) => {
+    //       this.loaded = true;
+    //       return response.json();
+    //     })
+    //     .catch((error) => {
+    //       this.loaded = true;
+    //       console.error(error);
+    //     });
+    // },
 
     async loadRepos (url) {
       try {
