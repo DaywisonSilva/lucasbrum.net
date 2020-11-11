@@ -59,7 +59,7 @@ export default {
 </script>
 <style scoped>
 main div.projects div span a {
-  font-size: .8em;
+  font-size: .75em;
 }
 .loader {
   border: 8px solid #f3f3f3; /* Light grey */
