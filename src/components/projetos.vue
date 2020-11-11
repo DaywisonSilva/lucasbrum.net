@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="projects">
     <h1>
       {{ titulo }}<span>{{ subtitulo }}</span>
     </h1>
@@ -65,7 +65,7 @@ export default {
   width: 30px;
   height: 30px;
   animation: spin 0.5s linear infinite;
-  text-align: center;
+  margin: 0 auto;
 }
 
 @keyframes spin {
