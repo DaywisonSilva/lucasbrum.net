@@ -64,7 +64,7 @@ export default {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  animation: spin 1s linear infinite;
+  animation: spin 0.5s linear infinite;
   text-align: center;
 }
 
